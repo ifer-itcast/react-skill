@@ -8,14 +8,15 @@ import React, {Component} from 'react';
 // import GetSnapshotBeforeUpdate from '@/components/02/GetSnapshotBeforeUpdate';
 // 4. 旧的 Context API
 // import OldContext from '@/components/03/OldContext';
-import NewContext from '@/components/03/NewContext';
-
+// import NewContext from '@/components/03/NewContext';
+// 5. PureComponent
+import PureCom from '@/components/04/PureCom';
 
 export default class App extends Component {
     render() {
         return (
             <>
-                <NewContext/>
+                <PureCom/>
             </>
         );
     }
