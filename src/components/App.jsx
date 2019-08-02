@@ -1,22 +1,26 @@
 import React, {Component} from 'react';
-// 1. 事件绑定
+// 00. 事件绑定
 // import BindEvent from '@/components/00/BindEvent';
-// 2. 使用 Ref
+// 01. 使用 Ref
 // import AboutRef from '@/components/01/AboutRef';
-// 3. 新生命周期
+// 02. 新生命周期
 // import GetDerivedStateFromProps from '@/components/02/GetDerivedStateFromProps';
 // import GetSnapshotBeforeUpdate from '@/components/02/GetSnapshotBeforeUpdate';
-// 4. 旧的 Context API
+// 03. 旧的 Context API
 // import OldContext from '@/components/03/OldContext';
 // import NewContext from '@/components/03/NewContext';
-// 5. PureComponent
-import PureCom from '@/components/04/PureCom';
+// 04. PureComponent
+// import PureCom from '@/components/04/PureCom';
+// 05. React.memo()
+// import Memo from '@/components/05/Memo';
+// 06. React.lazy()
+import Lazy from '@/components/06/Lazy';
 
 export default class App extends Component {
     render() {
         return (
             <>
-                <PureCom/>
+                <Lazy/>
             </>
         );
     }
