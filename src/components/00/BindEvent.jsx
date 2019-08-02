@@ -1,24 +1,25 @@
-import React, {Component} from 'react';
-import {Button} from 'antd';
+import React, { Component } from 'react';
+import User from './User';
 
 export default class BindEvent extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            num: 0
-        };
-        this.handleClick = this.handleClick.bind(this);
-    }
-    handleClick() {
-        this.setState((prevState, props) => ({num: prevState.num+1}));
-    }
-    render() {
-        const {num} = this.state;
-        return (
-            <div>
-                <p>{num}</p>
-                <Button type="primary" onClick={this.handleClick}>点击</Button>
-            </div>
-        );
-    }
+	constructor(props) {
+		super(props);
+		this.state = {
+			users: [{ id: 1, name: 'xxx' }, { id: 2, name: 'yyy' }, { id: 3, name: 'zzz' }]
+		};
+	}
+	deleteUser = id => {
+		this.setState(prevState => ({
+			users: prevState.users.filter(user => user.id !== id)
+		}));
+	};
+	render() {
+		return (
+			<div>
+				<ul>
+					{this.state.users.map(user => <User key={user.id} user={user} onDeleteClick={this.deleteUser} />)}
+				</ul>
+			</div>
+		);
+	}
 }
