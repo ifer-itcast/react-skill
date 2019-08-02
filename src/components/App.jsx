@@ -7,14 +7,15 @@ import React, {Component} from 'react';
 // import GetDerivedStateFromProps from '@/components/02/GetDerivedStateFromProps';
 // import GetSnapshotBeforeUpdate from '@/components/02/GetSnapshotBeforeUpdate';
 // 4. 旧的 Context API
-import Context from '@/components/03/Context';
+// import OldContext from '@/components/03/OldContext';
+import NewContext from '@/components/03/NewContext';
 
 
 export default class App extends Component {
     render() {
         return (
             <>
-                <Context/>
+                <NewContext/>
             </>
         );
     }
