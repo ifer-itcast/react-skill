@@ -18,14 +18,16 @@ import AboutRef from '@/components/01/AboutRef';
 // 07. ErrorBoundary
 // import Test, {ErrorBoundary} from './07/ErrorBoundary';
 // 08. React.createPortal
-import Test from './08/CreatePortal';
+// import Test from './08/CreatePortal';
 // 09. Fragments
 // import Fragment from './09/Fragment';
+// 10. Hooks
+import Hooks from './10/Hooks16';
 
 export default class App extends Component {
     render() {
         return (
-            <Test/>
+            <Hooks/>
         );
     }
 }
