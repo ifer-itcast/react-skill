@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 // 00. 事件绑定
 // import BindEvent from '@/components/00/BindEvent';
 // 01. 使用 Ref
-// import AboutRef from '@/components/01/AboutRef';
+import AboutRef from '@/components/01/AboutRef';
 // 02. 新生命周期
 // import GetDerivedStateFromProps from '@/components/02/GetDerivedStateFromProps';
 // import GetSnapshotBeforeUpdate from '@/components/02/GetSnapshotBeforeUpdate';
@@ -14,14 +14,16 @@ import React, {Component} from 'react';
 // 05. React.memo()
 // import Memo from '@/components/05/Memo';
 // 06. React.lazy()
-import Lazy from '@/components/06/Lazy';
+// import Lazy from '@/components/06/Lazy';
+// 07. ErrorBoundary
+// import Test, {ErrorBoundary} from './07/ErrorBoundary';
+// 09. Fragments
+import Fragment from './09/Fragment';
 
 export default class App extends Component {
     render() {
         return (
-            <>
-                <Lazy/>
-            </>
+            <Fragment/>
         );
     }
 }
