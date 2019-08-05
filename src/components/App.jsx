@@ -17,13 +17,15 @@ import AboutRef from '@/components/01/AboutRef';
 // import Lazy from '@/components/06/Lazy';
 // 07. ErrorBoundary
 // import Test, {ErrorBoundary} from './07/ErrorBoundary';
+// 08. React.createPortal
+import Test from './08/CreatePortal';
 // 09. Fragments
-import Fragment from './09/Fragment';
+// import Fragment from './09/Fragment';
 
 export default class App extends Component {
     render() {
         return (
-            <Fragment/>
+            <Test/>
         );
     }
 }
