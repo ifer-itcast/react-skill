@@ -22,7 +22,7 @@ import OldContext from '@/components/03/OldContext';
 // 08. React.createPortal
 // import Test from './08/CreatePortal';
 // 09. Fragments
-// import Fragment from './09/Fragment';
+import Fragment from './09/Fragment';
 // 10. Hooks
 // import Hooks from './10/Hooks16';
 
@@ -49,14 +49,18 @@ const R = <Router>
 import Hello from './12/Hello';
 // import User from './12/User';
 // import Joke from './12/Joke';
-import User from './12/optimize/User';
-import Joke from './12/optimize/Joke';
+// import User from './12/optimize/User';
+// import Joke from './12/optimize/Joke';
+
+// 13. react-powerplug
+import Normal from './13/Normal';
+import Powerplug from './13/Powerplug';
 
 
 export default class App extends Component {
     render() {
         return (
-            <User/>
+            <Fragment/>
         );
     }
 }

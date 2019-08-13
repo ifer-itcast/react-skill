@@ -1,0 +1,68 @@
+Arguments: 
+  D:\Soft\Node\node.exe D:\Soft\Yarn\bin\yarn.js add react-powerplug
+
+PATH: 
+  D:\Soft\Git\mingw64\bin;D:\Soft\Git\usr\bin;C:\Users\86185\bin;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Soft\Node;D:\Soft\Sublime Text 3;D:\Soft\Cmder;D:\Soft\Git\cmd;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;D:\Soft\Yarn\bin;C:\Android\tools;C:\Android\platform-tools;D:\Soft\mongodb\bin;C:\Users\86185\AppData\Local\Microsoft\WindowsApps;C:\Users\86185\AppData\Roaming\npm;D:\Soft\Microsoft VS Code\bin;C:\Users\86185\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\86185\AppData\Local\Yarn\Cache\v4\npm-ms-2.1.2-d09d1f357b443f493382a8eb3ccd183872ae6009\node_modules\ms\license.md' -> 'D:\Work\react-skill\node_modules\@babel\core\node_modules\ms\license.md'
+
+npm manifest: 
+  {
+    "name": "web",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "webpack-dev-server"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.5.5",
+      "@babel/plugin-proposal-class-properties": "^7.5.5",
+      "@babel/plugin-transform-runtime": "^7.5.5",
+      "@babel/preset-env": "^7.5.5",
+      "@babel/preset-react": "^7.0.0",
+      "babel-loader": "^8.0.6",
+      "babel-plugin-import": "^1.12.0",
+      "body-parser": "^1.19.0",
+      "css-loader": "^3.1.0",
+      "file-loader": "^4.1.0",
+      "html-webpack-plugin": "^3.2.0",
+      "node-sass": "^4.12.0",
+      "sass-loader": "^7.1.0",
+      "style-loader": "^0.23.1",
+      "url-loader": "^2.1.0",
+      "webpack": "^4.37.0",
+      "webpack-cli": "^3.3.6",
+      "webpack-dev-server": "^3.7.2"
+    },
+    "dependencies": {
+      "@babel/runtime": "^7.5.5",
+      "antd": "^3.20.7",
+      "axios": "^0.19.0",
+      "bootstrap": "^3.3.7",
+      "prop-types": "^15.7.2",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6",
+      "react-router-dom": "^5.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
