@@ -11,7 +11,7 @@ class Large1 extends Component {
 		);
 	}
 }
-class Small1 extends Component {
+/* class Small1 extends Component {
 	// step3
 	static contextTypes = {
 		color: PropTypes.string
@@ -23,7 +23,19 @@ class Small1 extends Component {
 			</div>
 		);
 	}
-}
+} */
+
+// 也可以使用函数的写法
+const Small1 = (props, context) => {
+	return (
+		<div style={{ border: '3px solid red', margin: 10, color: context.color }}>
+			<h4>孙子1</h4>
+		</div>
+	);
+};
+Small1.contextTypes = {
+	color: PropTypes.string
+};
 
 class Large2 extends Component {
 	render() {
