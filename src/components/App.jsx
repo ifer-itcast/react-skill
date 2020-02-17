@@ -34,17 +34,17 @@ import About from './11/About';
 import News from './11/News';
 
 const R = (
-	<Router>
-		<Link to="/">首页</Link>
-		<Link to="/news">新闻</Link>
-		<Link to="/about">关于</Link>
-		<Header />
-		<Route path="/" exact component={Home} />
-		<Route path="/news" render={() => <Redirect to="/news/1" />} />
-		<Route path="/news/:id" component={News} />
-		<Route path="/about" component={About} />
-		<Footer />
-	</Router>
+    <Router>
+        <Link to="/">首页</Link>
+        <Link to="/news">新闻</Link>
+        <Link to="/about">关于</Link>
+        <Header />
+        <Route path="/" exact component={Home} />
+        <Route path="/news" render={() => <Redirect to="/news/1" />} />
+        <Route path="/news/:id" component={News} />
+        <Route path="/about" component={About} />
+        <Footer />
+    </Router>
 );
 
 // 12. 高阶组件，是一个函数，参数和返回值都是一个组件
@@ -63,29 +63,46 @@ import Powerplug from './13/Powerplug';
 import Mouse2 from './14/Mouse2';
 import dog from './14/dog.jpg';
 
+{
+    /* <Fragment>
+    <Mouse2>
+        {({ x, y }) =>
+            <p>
+                x坐标：{x}y坐标：{y}
+            </p>}
+    </Mouse2>
+    <Mouse2>
+        {({ x, y }) =>
+            <img
+                src={dog}
+                style={{
+                    width: 100,
+                    position: 'absolute',
+                    top: y,
+                    left: x
+                }}
+            />}
+    </Mouse2>
+</Fragment> */
+}
+
+// 15. hooks
+// import UseStateTest from './15/UseStateTest';
+// import UseEffectTest from './15/UseEffectTest';
+// import UseContextTest from './15/UseContextTest';
+// import UseReducerTest from './15/UseReducerTest';
+// useContext && useReducer 模拟 redux 效果
+// import ImitateRedux from './16/index';
+// import UseMemoTest from './17/UseMemoTest';
+// import UseRefTest from './17/UseRefTest';
+import CustomHooks from './17/CustomHooks';
+
 export default class App extends Component {
-	render() {
-		return (
-			<Fragment>
-				<Mouse2>
-					{({ x, y }) =>
-						<p>
-							x坐标：{x}y坐标：{y}
-						</p>}
-				</Mouse2>
-				<Mouse2>
-					{({ x, y }) =>
-						<img
-							src={dog}
-							style={{
-								width: 100,
-								position: 'absolute',
-								top: y,
-								left: x
-							}}
-						/>}
-				</Mouse2>
-			</Fragment>
-		);
-	}
+    render() {
+        return (
+            <Fragment>
+                <CustomHooks />
+            </Fragment>
+        );
+    }
 }
