@@ -10,7 +10,7 @@ const Logger = (Com) => {
 
 const Hello = Logger((props) => {
     return (
-        <p>Hello {props.name}</p>
+        <p>Hello {props.name} {props.age}</p>
     )
 });
 

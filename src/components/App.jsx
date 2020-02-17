@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {HashRouter as Router, Route, Link, Redirect} from 'react-router-dom';
+import React, { Component, Fragment } from 'react';
+import { HashRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 
 // 00. 事件绑定
 // import BindEvent from '@/components/00/BindEvent';
@@ -22,7 +22,7 @@ import OldContext from '@/components/03/OldContext';
 // 08. React.createPortal
 // import Test from './08/CreatePortal';
 // 09. Fragments
-import Fragment from './09/Fragment';
+// import Fragment from './09/Fragment';
 // 10. Hooks
 // import Hooks from './10/Hooks16';
 
@@ -33,17 +33,19 @@ import Home from './11/Home';
 import About from './11/About';
 import News from './11/News';
 
-const R = <Router>
-    <Link to="/">首页</Link>
-    <Link to="/news">新闻</Link>
-    <Link to="/about">关于</Link>
-    <Header/>
-    <Route path="/" exact component={Home}/>
-    <Route path="/news" render={() => <Redirect to="/news/1"/>}/>
-    <Route path="/news/:id" component={News}/>
-    <Route path="/about" component={About}/>
-    <Footer/>
-</Router>;
+const R = (
+	<Router>
+		<Link to="/">首页</Link>
+		<Link to="/news">新闻</Link>
+		<Link to="/about">关于</Link>
+		<Header />
+		<Route path="/" exact component={Home} />
+		<Route path="/news" render={() => <Redirect to="/news/1" />} />
+		<Route path="/news/:id" component={News} />
+		<Route path="/about" component={About} />
+		<Footer />
+	</Router>
+);
 
 // 12. 高阶组件，是一个函数，参数和返回值都是一个组件
 import Hello from './12/Hello';
@@ -56,11 +58,34 @@ import Hello from './12/Hello';
 import Normal from './13/Normal';
 import Powerplug from './13/Powerplug';
 
+// 14. Render Props
+// import Mouse from './14/Mouse';
+import Mouse2 from './14/Mouse2';
+import dog from './14/dog.jpg';
 
 export default class App extends Component {
-    render() {
-        return (
-            <Fragment/>
-        );
-    }
+	render() {
+		return (
+			<Fragment>
+				<Mouse2>
+					{({ x, y }) =>
+						<p>
+							x坐标：{x}y坐标：{y}
+						</p>}
+				</Mouse2>
+				<Mouse2>
+					{({ x, y }) =>
+						<img
+							src={dog}
+							style={{
+								width: 100,
+								position: 'absolute',
+								top: y,
+								left: x
+							}}
+						/>}
+				</Mouse2>
+			</Fragment>
+		);
+	}
 }

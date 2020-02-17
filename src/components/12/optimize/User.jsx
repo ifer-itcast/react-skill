@@ -3,7 +3,7 @@ import withFetch from './WithFetch';
 
 const User = withFetch('https://randomuser.me/api/')(props => {
     return (
-        <h1>{props.data.results[0].email}</h1>
+        <h1>邮箱：{props.data.results[0].email} 年龄：{props.age}</h1>
     );
 });
 
